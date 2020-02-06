@@ -11,6 +11,7 @@ module.exports = {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
   },
+  "parser": "babel-eslint",
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -25,6 +26,9 @@ module.exports = {
     'react/jsx-filename-extension': [1, { 'extensions': ['.js', '.jsx'] }],
 
     // windows linebreaks when not in production environment
-    'linebreak-style': ["error", (require("os").EOL === "\r\n" ? "windows" : "unix")]
+    'linebreak-style': ["error", (require("os").EOL === "\r\n" ? "windows" : "unix")],
+
+    // state doesn't need a constructor anymore
+    "react/state-in-constructor": [1, 'never']
   },
 };
