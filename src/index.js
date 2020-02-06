@@ -3,13 +3,11 @@ import ReactDOM from 'react-dom';
 
 // import registerServiceWorker from './registerServiceWorker';
 
-// import './index.css';
-// import App from './App';
-import Homepage from './components/pages/Homepage'
+import App from './App';
 
 ReactDOM.render(
-  <Homepage />,
-  document.getElementById('root')
+  <App />,
+  document.getElementById('root'),
 );
 
 // registerServiceWorker();

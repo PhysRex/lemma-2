@@ -1,16 +1,17 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
-import Banner from '../presentational/Banner'
+import Banner from '../presentational/Banner';
 
 class Homepage extends Component {
   state = {
-    settings: {}
+    settings: {},
   }
 
   render() {
+    const { settings } = this.state;
     return (
       <div>
-        <Banner />
+        <Banner settings={settings} />
       </div>
     );
   }
